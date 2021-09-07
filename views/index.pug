@@ -5,8 +5,9 @@ block content
     button(type="button") New Message
   h1= title
 
-  each user in messages
-    div(class='userMessage')
-      h2= user.user
-      p= user.text
-      small= user.added
+  ul(class='userMessages')
+    each user in messages
+      li(class='userMessage')
+        h2= user.user
+        p= user.text
+        small= user.added

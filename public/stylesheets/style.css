@@ -10,6 +10,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
+  background-color: #F8F0DF;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 
   height: 100vh;
@@ -30,4 +31,28 @@ h1 {
 
   height: 100%;
   width: 100%;
+}
+
+.userMessages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.userMessage {
+  background-color: #FEFBF3;
+  box-shadow: 5px 5px 15px -7px #9D9D9D;
+  padding: 15px;
+
+  width: 550px;
+}
+
+.userMessage h2 {
+  color: #79B4B7;
+  border-bottom: 2px solid #9D9D9D;
+  margin-bottom: 15px;
 }

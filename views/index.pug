@@ -1,10 +1,9 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
   a(href="/new")
     button(type="button") New Message
+  h1= title
 
   each user in messages
     div(class='userMessage')

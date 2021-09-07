@@ -7,6 +7,7 @@ block content
     button(type="button") New Message
 
   each user in messages
-    h2= user.user
-    p= user.text
-    small= user.added
+    div(class='userMessage')
+      h2= user.user
+      p= user.text
+      small= user.added
